@@ -11,10 +11,16 @@ public class RatesInfo {
 	String name;
 	String code;
 	String table;
-	String averageMid;
 	String averageBid;
 	String averageAsk;
-	
+	String averageMid;
+
+
+	@XmlElement(name = "Table")
+	public String getTable() {
+		return table;
+	}
+
 	@XmlElement(name = "Currency")
 	public String getName() {
 		return name;
@@ -23,11 +29,6 @@ public class RatesInfo {
 	@XmlElement(name = "Code")
 	public String getCode() {
 		return code;
-	}
-		
-	@XmlElement(name = "Table")
-	public String getTable() {
-		return table;
 	}
 	
 	@XmlElement(name = "Mid")

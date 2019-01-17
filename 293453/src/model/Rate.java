@@ -54,6 +54,10 @@ public class Rate {
 		this.effectiveDate = effectiveDate;
 	}
 	
+	public void setMid(double mid) {
+		this.mid = mid;
+	}
+	
 	public void setBid(double bid) {
 		this.bid = bid;
 	}

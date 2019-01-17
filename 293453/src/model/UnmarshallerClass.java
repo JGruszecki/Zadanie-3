@@ -16,7 +16,7 @@ public class UnmarshallerClass {
 			StringReader stringReader = new StringReader(answer);
 			RatesList ratesList = (RatesList) unmarshaller.unmarshal(stringReader);
 			return ratesList;
-		} catch (Exception e) {
+		} catch (JAXBException e) {
 			return null;
 		}
 	}

@@ -44,8 +44,7 @@ public class RatesList {
 	
 	@XmlElementWrapper(name = "Rates" )
 	@XmlElement(name = "Rate")
-	public List<Rate> getRatesList() 
-	{
+	public List<Rate> getRatesList() {
 		return ratesList;
 	}
 	
@@ -53,8 +52,8 @@ public class RatesList {
 		this.table = table;
 	}
 	
-	public void setCurrencyName(String currencyName) {
-		this.name = currencyName;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	public void setCode(String code) {
